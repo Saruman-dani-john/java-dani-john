@@ -1,4 +1,5 @@
 //https://codingbat.com/prob/p192082
+import java.util.Scanner;
 
 public class Dani {
     public static void main(String[] args) {
@@ -15,6 +16,7 @@ public class Dani {
         System.out.println(front22("a"));
         System.out.println(front22("mississippi"));
 
+        countVowelsAndConst();
 
     }
     //Given two temperatures, return true if one is less than 0 and the other is greater than 100.
@@ -56,6 +58,35 @@ public class Dani {
         }else{
             String firstTwo = str.substring(0,2);
             return firstTwo + str + firstTwo;
+        }
+    }
+
+
+
+    //Vowel and consonant count in class bonus
+
+    public static void countVowelsAndConst () {
+        System.out.println("Please enter a word");
+        Scanner input = new Scanner(System.in);
+        String word = input.nextLine().toLowerCase();
+        int l = word.length();
+        int vowels = 0, con=0;
+        for(int i =0; i < l; i++){
+            char c = word.charAt(i);
+
+            if(c == 'a' || c == 'e'|| c == 'i'|| c == 'o'|| c == 'u'){
+                vowels++;
+            }else {
+                con++;
+            }
+        }
+
+        System.out.println("vowel count: " + vowels);
+        System.out.println("consonant count: " + con);
+        System.out.println("do you want to enter another word? Y/N");
+        String answer = input.nextLine();
+        if(answer.equalsIgnoreCase("y")) {
+            countVowelsAndConst();
         }
     }
 
