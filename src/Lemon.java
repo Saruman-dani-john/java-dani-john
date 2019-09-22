@@ -62,4 +62,19 @@ public class Lemon {
         return sum;
     }
 
+//    Given an int n, return the absolute difference between n and 21, except return double the absolute difference if n is over 21.
+    public static int diff21(int n) {
+        int abs = 21 - n;
+        if(n > 21){
+            abs = (n - 21) * 2;
+        }
+        return abs;
+    }
+
+//    Given 2 ints, a and b, return true if one if them is 10 or if their sum is 10.
+    public static boolean makes10(int a, int b) {
+        return (a == 10 || b == 10 || a + b == 10);
+    }
+
+
 }
