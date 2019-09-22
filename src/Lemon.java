@@ -76,5 +76,10 @@ public class Lemon {
         return (a == 10 || b == 10 || a + b == 10);
     }
 
+//    Given a string, compute recursively (no loops) a new string where all appearances of "pi" have been replaced by "3.14".
+    public static String changePi(String str) {
+        return str.replace("pi", "3.14");
+    }
+
 
 }
