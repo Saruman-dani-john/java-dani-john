@@ -59,21 +59,6 @@ public class Dani {
         }
     }
 
-
-    //In class bonus work
-
-    //Create date format converter application.
-    //Take in the following format:
-    //MM/DD/YYYY
-    //Output the following:
-    //MonthName DD, YYYY
-    //Example:
-    //input - 12/01/1999
-    //output - December 12, 1999
-
-
-
-
 }
 
 
