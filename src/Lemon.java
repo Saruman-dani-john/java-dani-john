@@ -36,7 +36,6 @@ public class Lemon {
 //        System.out.println("Consonants: " + consonants);
 
         // Method Calls from bonus practice on methods
-
     }
 
     //----- Practice Problems https://codingbat.com/java/Warmup-1 --------
