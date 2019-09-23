@@ -36,6 +36,10 @@ public class Lemon {
 //        System.out.println("Consonants: " + consonants);
 
         // Method Calls from bonus practice on methods
+
+//        fizzBuzzLoop(1);
+
+
     }
 
     //----- Practice Problems https://codingbat.com/java/Warmup-1 --------
@@ -78,6 +82,23 @@ public class Lemon {
 //    Given a string, compute recursively (no loops) a new string where all appearances of "pi" have been replaced by "3.14".
     public static String changePi(String str) {
         return str.replace("pi", "3.14");
+    }
+
+    // FizzBuzz recursion
+    public static int fizzBuzzLoop(int i) {
+            if (i % 3 == 0 && i % 5 == 0) {
+                System.out.println("FizzBuzz");
+            } else if (i % 3 == 0) {
+                System.out.println("Fizz");
+            } else if (i % 5 == 0) {
+                System.out.println("Buzz");
+            } else {
+                System.out.println(i);
+            }
+            if (i == 100) {
+                return 0;
+            }
+            return fizzBuzzLoop(i+1);
     }
 
 
