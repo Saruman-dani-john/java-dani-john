@@ -1,8 +1,11 @@
 public class ArrayPractice {
+
+
+
     public static void main(String[] args) {
 
 
-//        System.out.println(reverse3());
+        System.out.println(reverse3(a));
 
 //        sum3([5, 11, 2]);
 //        makeMiddle([1, 2, 3, 4]);
@@ -19,11 +22,11 @@ public class ArrayPractice {
 
     //https://codingbat.com/java/Array-1
 
-
+    static int[]a = {5,11,2};
     // Given an array of ints length 3, return a new array with the elements
     // in reverse order, so {1, 2, 3} becomes {3, 2, 1}.
 
-    int[]a = {5,11,2};
+
 
 
     public static int[] reverse3(int[] nums) {
