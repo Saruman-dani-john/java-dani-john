@@ -7,8 +7,11 @@ public class ArrayPractice {
 
         System.out.println(reverse3(a));
 
-//        sum3([5, 11, 2]);
-//        makeMiddle([1, 2, 3, 4]);
+        System.out.println(sum3(b));
+
+        System.out.println(makeMiddle(c));
+        System.out.println(makeMiddle(d));
+
 
 
         System.out.println(count11("11abc11"));//2
@@ -23,6 +26,10 @@ public class ArrayPractice {
     //https://codingbat.com/java/Array-1
 
     static int[]a = {5,11,2};
+    static int[]b = {7,23,16};
+    static int[]c = {1,2};
+    static int[]d = {7,1,2,5,9};
+
     // Given an array of ints length 3, return a new array with the elements
     // in reverse order, so {1, 2, 3} becomes {3, 2, 1}.
 
@@ -42,29 +49,29 @@ public class ArrayPractice {
 
     //Given an array of ints length 3, return the sum of all the elements
 
-//    public static int sum3(int[] nums) {
-//        int sum = 0;
-//
-//        for (int i = 0; i < nums.length; i++){
-//            sum +=  nums[i];
-//        }
-//        return sum;
-//    }
+    public static int sum3(int[] nums) {
+        int sum = 0;
+
+        for (int i = 0; i < nums.length; i++){
+            sum +=  nums[i];
+        }
+        return sum;
+    }
 
     //Given an array of ints of even length, return a new array length 2 containing the middle two
     // elements from the original array. The original array will be length 2 or more.
 
-//    public static int[] makeMiddle(int[] nums) {
-//        int[] a = new int[2];
-//        if(nums.length>1) {
-//            a[1]=nums[nums.length/2];
-//            a[0]=nums[nums.length/2-1];
-//            return a;
-//        } else {
-//            a[2]=nums[((nums.length+1)/2) -1];
-//        }
-//        return a;
-//    }
+    public static int[] makeMiddle(int[] nums) {
+        int[] a = new int[2];
+        if(nums.length>1) {
+            a[1]=nums[nums.length/2];
+            a[0]=nums[nums.length/2-1];
+            return a;
+        } else {
+            a[2]=nums[((nums.length+1)/2) -1];
+        }
+        return a;
+    }
 
 //RECURSION
 
